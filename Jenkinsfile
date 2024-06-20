@@ -15,6 +15,7 @@ pipeline {
                 sh 'echo "Building..."'
                  sh 'echo "Building..."'
                    sh 'echo "Building..."'
+                sh 'echo "Building..."'
             }
         }
     }
