@@ -6,12 +6,12 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/shubhangi-zanzane/project1.git'
+                git 'https://github.com/shubhangi-zanzane/Repo-2.git'
             }
         }
         stage('Build') {
             steps {
-                sh 'mvn clean package'
+                sh 'echo "hello"'
             }
         }
     }
