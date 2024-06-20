@@ -1,17 +1,17 @@
 pipeline {
     agent any
-    triggers {
-        githubPush()
-    }
+ 
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/shubhangi-zanzane/Repo-2.git'
+                git 'https://github.com/shubhangi-zanzane/project1.git'
             }
         }
         stage('Build') {
             steps {
-                sh 'echo "hello"'
+              sh 'echo "Building..."'
+                 sh 'echo "Building..."'
+                 sh 'echo "Building..."'
             }
         }
     }
