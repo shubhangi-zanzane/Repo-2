@@ -12,11 +12,11 @@ pipeline {
         stage('install')
         {
             steps{
-                sh 'docker rm -f server'
+                sh 'docker rm -f test'
                // sh 'docker system prune -a -f'
-              sh 'docker run -itd --name server httpd bash'
+              sh 'docker run -itd --name test httpd bash'
             
-               //sh 'docker exec -it server bash'
+               //sh 'docker exec -it test bash'
                 sh 'mkdir -p /usr/local/apache2/htdocs '
                  sh 'rm -rf /usr/local/apache2/htdocs/index.html'
                sh 'cp index.html /usr/local/apache2/htdocs '
