@@ -16,7 +16,7 @@ pipeline {
                 sh 'docker system prune -a -f'
               
                   sh 'docker run -p 80:80 --name server httpd bash'
-                  sh 'docker exec -it server bash'
+                 // sh 'docker exec -it server bash'
                 sh 'mkdir -p /usr/local/apache2/htdocs '
                  
                sh 'cp index.html /usr/local/apache2/htdocs '
