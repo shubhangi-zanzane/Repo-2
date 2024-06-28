@@ -12,7 +12,7 @@ pipeline {
         stage('install')
         {
             steps{
-                sh 'docker stop server'
+                //sh 'docker stop server'
                 sh 'docker system prune -a -f'
               
                   sh 'docker run -itd --name server httpd bash'
