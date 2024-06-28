@@ -12,6 +12,7 @@ pipeline {
         stage('install')
         {
             steps{
+                sh 'rm -rf /usr/local/apache2/htdocs/index.html'
                 sh 'docker rm -f server'
                // sh 'docker system prune -a -f'
               sh 'docker run -itd --name server httpd bash'
