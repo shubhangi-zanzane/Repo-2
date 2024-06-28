@@ -15,9 +15,10 @@ pipeline {
                 sh 'docker rm -f server'
                // sh 'docker system prune -a -f'
               sh 'docker run -itd --name server httpd bash'
-                sh 'rm -rf /usr/local/apache2/htdocs/index.html'
+            
                //sh 'docker exec -it server bash'
                 sh 'mkdir -p /usr/local/apache2/htdocs '
+                 sh 'rm -rf /usr/local/apache2/htdocs/index.html'
                sh 'cp index.html /usr/local/apache2/htdocs '
                 sh 'chmod -R 777 /usr/local/apache2/htdocs/index.html'
                 
