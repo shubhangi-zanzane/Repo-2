@@ -6,7 +6,7 @@ pipeline {
         {
             steps
             {
-            git branch:'2024-Q1', url:'https://github.com/shubhangi-zanzane/Repo-2.git'    
+            git branch:' 2024-Q1', url:'https://github.com/shubhangi-zanzane/Repo-2.git'    
             }
         }
         stage('install')
